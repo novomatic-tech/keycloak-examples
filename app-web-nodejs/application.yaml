@@ -1,0 +1,27 @@
+server:
+  port: 8888
+logging:
+  indent: 0
+  colored: true
+  pino: 
+    level: 'debug'
+  formats:
+    log: ':time[iso] :level :tags :message'
+    request: ':time[iso] :level :tags :message'
+    request-error: ':time[iso] :level :tags :message'
+    response: ':time[iso] :level :tags :message'
+    onPostStart: ':time[iso] :level :tags :message at: :host[uri]'
+    onPostStop: ':time[iso] :level :tags :message'
+    uncaught: ':time[iso] :level :tags :message'
+sessionStore:
+  storeBlank: false
+  name: 'kc_session'
+  maxCookieSize: 0
+  cookieOptions:
+    password: 'the-password-must-be-at-least-32-characters-long'
+    isSecure: false
+auth:
+  serverUrl: 'http://localhost:8080/auth'
+  realm: 'examples'
+  clientId: 'app-web-nodejs'
+  clientSecret: '1dsf4534rhfsfs345tdgfgj'

@@ -1,0 +1,12 @@
+{
+  "oauth2": {
+    "authority": "http://localhost:8080/auth/realms/examples",
+    "client_id": "app-web-react",
+    "redirect_uri": "http://localhost:3000/auth-callback",
+    "post_logout_redirect_uri": "http://localhost:3000/",
+    "response_type": "token id_token",
+    "scope": "openid profile",
+    "silent_redirect_uri": "http://localhost:3000/silent-renew.html",
+    "automaticSilentRenew": true
+  }
+}

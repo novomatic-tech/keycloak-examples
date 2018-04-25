@@ -1,0 +1,19 @@
+{
+  "name": "app-console-nodejs",
+  "version": "1.0.0",
+  "description": "A sample application implementing OAuth2.0's client credentials grant",
+  "main": "index.js",
+  "scripts": {
+    "grant:client": "node client-credentials.js",
+    "grant:resource-owner": "node resource-owner-credentials.js"
+  },
+  "author": "NOVOMATIC Technologies Poland S.A.",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "keycloak-connect": "^4.0.0-beta.1",
+    "nconf": "^0.10.0",
+    "nconf-yaml": "^1.0.2",
+    "read": "^1.0.7"
+  }
+}

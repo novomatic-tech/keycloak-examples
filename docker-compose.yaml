@@ -1,0 +1,16 @@
+version: '2.1'
+services:
+  keycloak:
+    image: jboss/keycloak:3.4.3.Final
+    environment:
+      - KEYCLOAK_USER=admin
+      - KEYCLOAK_PASSWORD=admin
+    expose:
+      - 8080
+    command:
+      - "-b 0.0.0.0"
+      - "-Dkeycloak.import=/opt/jboss/keycloak/examples-realm.json"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./examples-realm.json:/opt/jboss/keycloak/examples-realm.json

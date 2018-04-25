@@ -1,0 +1,48 @@
+{
+  "name": "app-web-react",
+  "version": "0.1.0",
+  "description": "A sample application implementing OAuth2.0's implicit grant",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "enzyme": "^2.9.1",
+    "flux-standard-action": "^1.2.0",
+    "material-ui": "^1.0.0-beta.30",
+    "material-ui-icons": "^1.0.0-beta.36",
+    "oidc-client": "^1.4.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.1.2",
+    "react-router-dom": "^4.1.2",
+    "react-scripts": "1.0.11",
+    "react-tap-event-plugin": "^2.0.1",
+    "react-test-renderer": "^15.6.1",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.2.1",
+    "redux-oidc": "^3.0.0-beta.16"
+  },
+  "scripts": {
+    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "test": "cross-env CI=true react-scripts test --env=jsdom --coverage",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "chai": "^4.1.1",
+    "cucumber": "^3.0.1",
+    "cross-env": "^5.1.1",
+    "eslint": "^4.6.1",
+    "spa-http-server": "^0.9.0",
+    "npm-run-all": "^4.0.2",
+    "redux-immutable-state-invariant": "^2.0.0",
+    "with-package": "^0.2.0",
+    "zombie": "^5.0.7",
+    "cpy-cli": "^1.0.1"
+  },
+  "author": "NOVOMATIC Technologies Poland S.A.",
+  "license": "MIT"
+}

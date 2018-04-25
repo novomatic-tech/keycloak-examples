@@ -1,0 +1,5 @@
+keycloak:
+  serverUrl: http://localhost:8080/auth
+  realm: examples
+  clientId: app-console-nodejs
+  secret: 6a0dd495-09bc-4ed1-87a2-3367bb75b05d

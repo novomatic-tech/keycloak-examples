@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Silent Renew</title>
+</head>
+
+<body>
+<script src='static/js/oidc-client.min.js'></script>
+<script>
+    Oidc.Log.logger = console;
+    Oidc.Log.level = Oidc.Log.INFO;
+    new Oidc.UserManager().signinSilentCallback();
+</script>
+</body>
+
+</html>

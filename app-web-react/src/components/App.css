@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  min-width:1200px;
+}
+
+pre {
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.applicationName {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+svg.error-icon {
+  width: 2em !important;
+  height: 2em !important;
+  vertical-align: middle !important;
+  color: darkred !important;
+}
+
+span.error-message {
+  color: darkred !important;
+}
+
+code {
+  color: rgb(212, 130, 42);
+  white-space: pre-wrap;
+}
+
+.bottomBar {
+  width: 100%;
+  color: #999;
+  font-size: 0.8125rem;
+  text-align: center;
+  padding: 1em;
+}
+
+.flex {
+  flex: 1;
+}
+
+.right {
+  float: right;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.stretch {
+  width:100%;
+}
+
+div.box {
+  background-color: white;
+  box-shadow: 1px 1px 4px 0px #888888;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  min-width: 1040px;
+}
+
+div.box-header {
+  border-bottom: 1px #ddd solid;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+
+.box-header-right {
+  margin-right: 15px;
+}
+
+div.box-footer {
+  border-top: 1px #ddd solid;
+  padding: 10px 15px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+div.box-footer button {
+  margin-left:15px;
+}
+
+div.box-body {
+  padding: 15px 40px;
+}
+
+.appIcon {
+  width: 36px !important;
+  height: 36px !important;
+  margin-right: 10px;
+}
+
+.app-bar-tabs {
+  margin-right: 50px;
+}
+
+.tab {
+  font-size: 1.125rem !important;
+  height: 64px !important;
+}
