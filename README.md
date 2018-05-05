@@ -49,4 +49,5 @@ Now you're all set up to run the examples.
 - [app-web-nodejs](./app-web-nodejs) - Shows how to obtain grants from Keycloak in a classic, server-based web application written in HapiJS using OAuth's Authorization Code Grant.
 - [app-web-react](./app-web-react) - Shows how to obtain grants from Keycloak in a modern web application (SPA) written in React using OAuth's Implicit Grant.
 - [app-console-nodejs](./app-console-nodejs) - Shows how to obtain grants for both users and the application itself in a console app (native app) using OAuth's Resource Owner Password Credentials and Client Credentials Grants.
+- [service-springboot-rest](./service-springboot-rest) - Shows how to validate access tokens in a resource server (Spring Boot-based REST service).
 

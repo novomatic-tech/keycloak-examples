@@ -7,7 +7,10 @@ const constants = {
     RESET_PASSWORD: 'RESET_PASSWORD',
 
     /* alerts */
-    DISMISS_MESSAGE: 'DISMISS_MESSAGE'
+    DISMISS_MESSAGE: 'DISMISS_MESSAGE',
+
+    /* products */
+    GET_PRODUCTS: 'GET_PRODUCTS'
 };
 
 export default constants;

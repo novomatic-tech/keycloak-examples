@@ -74,6 +74,7 @@ class App extends React.Component {
 App.propTypes = {
     clientId: PropTypes.string,
     user: PropTypes.object,
+    appConfig: PropTypes.object,
     alerts: PropTypes.object.isRequired,
     actions: PropTypes.shape({
         signIn: PropTypes.func.isRequired,
@@ -89,7 +90,8 @@ export default connected(App)
         return {
             clientId: state.appConfig.oauth2.client_id,
             user: state.oidc.user,
-            alerts: state.alerts
+            alerts: state.alerts,
+            appConfig: state.appConfig
         };
     })
     .mappingActionsToProps({ signIn, signInSilent, signOut, changePassword , alertClosed })

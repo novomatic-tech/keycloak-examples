@@ -161,7 +161,7 @@
         "saml.server.signature.keyinfo.ext": "false",
         "saml.onetimeuse.condition": "false"
       },
-      "fullScopeAllowed": false,
+      "fullScopeAllowed": true,
       "nodeReRegistrationTimeout": -1,
       "protocolMappers": [
         {
@@ -255,6 +255,11 @@
       "useTemplateConfig": false,
       "useTemplateScope": false,
       "useTemplateMappers": true
+    },
+    {
+      "clientId": "product-service",
+      "enabled": true,
+      "bearerOnly": true
     }
   ],
   "clientTemplates": [],

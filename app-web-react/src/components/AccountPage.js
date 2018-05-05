@@ -6,11 +6,7 @@ import Button from 'material-ui/Button';
 import VisibilityIcon from 'material-ui-icons/Visibility';
 import VisibilityOffIcon from 'material-ui-icons/VisibilityOff';
 import Typography from 'material-ui/Typography';
-
-const getTokenPayload = (token) => {
-    const encodedPayload = token.substring(token.indexOf('.') + 1, token.lastIndexOf('.'));
-    return JSON.stringify(JSON.parse(atob(encodedPayload)), null, 2);
-};
+import {getTokenPayload} from '../util';
 
 const inspectToken = (token) => {
     window.location = `https://jwt.io/?token=${token}`;
@@ -45,7 +41,7 @@ class Token extends React.Component {
                 </div>
                 <div style={ { clear: 'both' } } />
                 <pre>
-                    {tokenDecoded ? getTokenPayload(token) : token}
+                    {tokenDecoded ? JSON.stringify(getTokenPayload(token), null, 2) : token}
                 </pre>
             </Paper>
         );
