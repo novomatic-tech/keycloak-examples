@@ -53,6 +53,19 @@
       "subGroups": []
     }
   ],
+  "roles": {
+    "client": {
+      "product-service": [
+        {
+          "name": "view-products",
+          "scopeParamRequired": false,
+          "composite": false,
+          "clientRole": true,
+          "containerId": "fb5441f2-af3f-4f86-b8de-8d8054b777fc"
+        }
+      ]
+    }
+  },
   "defaultRoles": [
     "offline_access",
     "uma_authorization"
@@ -96,7 +109,7 @@
         "saml.server.signature.keyinfo.ext": "false",
         "saml.onetimeuse.condition": "false"
       },
-      "fullScopeAllowed": false,
+      "fullScopeAllowed": true,
       "nodeReRegistrationTimeout": -1,
       "protocolMappers": [
         {
@@ -257,6 +270,7 @@
       "useTemplateMappers": true
     },
     {
+      "id": "fb5441f2-af3f-4f86-b8de-8d8054b777fc",
       "clientId": "product-service",
       "enabled": true,
       "bearerOnly": true
@@ -284,7 +298,13 @@
           "value": "jsnow"
         }
       ],
-      "groups": ["Starks"]
+      "groups": ["Starks"],
+      "clientRoles": {
+        "account": [
+          "view-profile",
+          "manage-account"
+        ]
+      }
     },
     {
       "username": "astark",
@@ -298,7 +318,16 @@
           "value": "astark"
         }
       ],
-      "groups": ["Starks"]
+      "groups": ["Starks"],
+      "clientRoles": {
+        "product-service": [
+          "view-products"
+        ],
+        "account": [
+          "view-profile",
+          "manage-account"
+        ]
+      }
     },
     {
       "username": "tlannister",
@@ -312,7 +341,13 @@
           "value": "tlannister"
         }
       ],
-      "groups": ["Lannisters"]
+      "groups": ["Lannisters"],
+      "clientRoles": {
+        "account": [
+          "view-profile",
+          "manage-account"
+        ]
+      }
     }
   ]
 }

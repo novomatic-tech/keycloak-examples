@@ -5,7 +5,7 @@ const read = require('read');
 const config = nconf
   .argv({ parseValues: true })
   .file({ file: 'keycloak.yaml', format: yaml })
-  .defaults({ showHttp: false })
+  .defaults({ showHttp: false, decodeJwt: false })
   .get();
 
 const printJson = (obj) => {
@@ -59,11 +59,13 @@ const printAuthResponse = (grant) => {
         });
     }
 
-    console.log('\nYou have been successfully authorized!\n');
+    console.log(`\nYou have been successfully authorized!\n\nHere is your access token:\n${grant.access_token.token}`);
 
-    printJwt('Access Token', grant.access_token.content);
-    printJwt('Refresh Token', grant.refresh_token.content);
-    printJwt('ID Token', grant.id_token.content);
+    if (config.decodeJwt) {
+        printJwt('Access Token', grant.access_token.content);
+        printJwt('Refresh Token', grant.refresh_token.content);
+        printJwt('ID Token', grant.id_token.content);
+    }
 };
 
 const printAuthError = (e) => {
