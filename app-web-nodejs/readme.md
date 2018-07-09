@@ -9,7 +9,7 @@ and [keycloak-hapi](https://github.com/novomatic-tech/keycloak-hapi) libraries t
 ## Prerequisites
 
 - A running instance of [Keycloak](http://www.keycloak.org/) with a realm and a `confidential` client configured
-  according to the `config.yaml` and `Standard Grant` enabled.
+  according to the `application.yaml` and `Standard Grant` enabled.
 - Installed [NodeJS](https://nodejs.org/en/)
 - Installed all dependencies
 
