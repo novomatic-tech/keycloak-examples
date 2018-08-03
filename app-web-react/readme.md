@@ -34,3 +34,7 @@ npm start
 
 Visit the `localhost:3000` and try to sign in as `jsnow:jsnow`.
 Once signed in, click the user name and navigate to the Account to see both access and ID tokens.
+
+**Note**
+
+Previously, it was recommended that browser-based apps use the "Implicit" flow, which returns an access token immediately and does not have a token exchange step. In the time since the spec was originally written, the industry best practice has changed to recommend that the authorization code flow be used without the client secret. This provides more opportunities to create a secure flow, such as using the state parameter. References: [Redhat](https://www.ietf.org/mail-archive/web/oauth/current/msg16966.html), [Deutsche Telekom](https://www.ietf.org/mail-archive/web/oauth/current/msg16968.html), [Smart Health IT](https://www.ietf.org/mail-archive/web/oauth/current/msg16967.html).
