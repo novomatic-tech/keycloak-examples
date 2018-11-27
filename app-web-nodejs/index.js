@@ -63,7 +63,9 @@ const run = async () => {
         path: '/restricted',
         handler(request, reply) {
             server.log(['debug'], `Obtaining access token for request: ${request.raw.req.url}\n${JSON.stringify(request.auth.credentials.accessToken.content)}`);
-            return `<h1 style="font-family: Trebuchet MS">You're now in the restricted part of the app, <strong>${request.auth.credentials.name}</strong>!</h1> <br/><a href="/sso/logout">Logout</a>`;
+            return `<h1 style="font-family: Trebuchet MS">You're now in the restricted part of the app, <strong>${request.auth.credentials.name}</strong>!</h1>` +
+                `<pre>${JSON.stringify(request.auth.credentials.accessToken.content, null, 4)}</pre>` +
+                `<br/><a href="/sso/logout">Logout</a>`;
         }
     });
 
